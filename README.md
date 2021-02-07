@@ -22,7 +22,7 @@
      - ./geth --allow-insecure-unlock --datadir node2 --unlock &quot;0x34064e5666b1d6f5fd141121738f097d4449434e&quot; --port 30304 --rpc --bootnodes &quot;enode://6485277ddb7a7391732fd68a1f02705765e54805a00015d45e69f4c01d037a5f8d1a85d21a2ec9978d7be8133b197601a967b6ec81dbc0a807a8cd326e66ab7e@127.0.0.1:30303&quot; --ipcdisable
 13. Both nodes are now producing new blocks.
 14. Imported node 2&#39;s private key into MyCrypto by importing the keystore file from the node1/keystore directory.
-15. Using the MyCrypto GUI wallet, connected to the node with the exposed RPC port (node 2), by creating a custom network (Murnane), identifying the chain ID (567), and using ETH as the currency.
+15. Using the MyCrypto GUI wallet, connected to the node with the exposed RPC port (node 2), by creating a custom network (Murnane), identifying the chain ID (123), and using ETH as the currency.
 
 **Send a test transaction**
 
