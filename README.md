@@ -17,12 +17,12 @@
     - ./geth init Murnane.json --datadir node1
      - ./geth init Murnane.json --datadir node2
 11. Ran the first node, unlocked the account, enabling mining and the RPC flag.
-     - ./geth --datadir node1 --unlock &quot;0xaa885ff76eea3c232428c214357915e69b4f55e5&quot; --mine --minerthreads 1
+     - ./geth --datadir node1 --unlock &quot;0xaa885ff76eea3c232428c214357915e69b4f55e5&quot; --mine --rpc
 12. Set a different peer port for the second node and used the first node&#39;s enode address as the bootnode flag.
-     - ./geth --allow-insecure-unlock --datadir node2 --unlock &quot;0x34064e5666b1d6f5fd141121738f097d4449434e&quot; --port 30304 --rpc --bootnodes &quot;enode://6485277ddb7a7391732fd68a1f02705765e54805a00015d45e69f4c01d037a5f8d1a85d21a2ec9978d7be8133b197601a967b6ec81dbc0a807a8cd326e66ab7e@127.0.0.1:30303&quot; --ipcdisable
+     - ./geth --allow-insecure-unlock --datadir node2 --unlock &quot;0x34064e5666b1d6f5fd141121738f097d4449434e&quot; --port 30304 --bootnodes &quot;enode://6485277ddb7a7391732fd68a1f02705765e54805a00015d45e69f4c01d037a5f8d1a85d21a2ec9978d7be8133b197601a967b6ec81dbc0a807a8cd326e66ab7e@127.0.0.1:30303&quot; --ipcdisable
 13. Both nodes are now producing new blocks.
 14. Imported node 2&#39;s private key into MyCrypto by importing the keystore file from the node1/keystore directory.
-15. Using the MyCrypto GUI wallet, connected to the node with the exposed RPC port (node 2), by creating a custom network (Murnane), identifying the chain ID (123), and using ETH as the currency.
+15. Using the MyCrypto GUI wallet, connected to the node with the exposed RPC port (node 1), by creating a custom network (Murnane), identifying the chain ID (123), and using ETH as the currency.
 
 **Send a test transaction**
 
@@ -41,11 +41,11 @@ As I was unable to get the 2 nodes mining I was not able to send a test transact
 
 **Instructions on how to launch the Murnane chain**
 
-This network is configured for 5 second block times, and uses the Clique Proof of Authority consensus algorithm. The chain ID is 567.
+This network is configured for 5 second block times, and uses the Clique Proof of Authority consensus algorithm. The chain ID is 123.
 
 The sealer node addresses are:
 
-0x34064e5666b1d6f5fd141121738f097d4449434e
+0xaa885ff76eea3c232428c214357915e69b4f55e5
 
 0x34064e5666b1d6f5fd141121738f097d4449434e
 
@@ -53,21 +53,17 @@ The account password for both nodes is password
 
 Run the first node and enable the mining/sealing
 
-./geth --datadir node1 --unlock &quot;0xaa885ff76eea3c232428c214357915e69b4f55e5&quot; --mine --minerthreads 1
-
 ./geth --allow-insecure-unlock --datadir node1 --unlock &quot;0xaa885ff76eea3c232428c214357915e69b4f55e5&quot; --mine --rpc
 
 We enable the --rpc flag on the first node to talk to it later. This defaults to port 8545. We need to unlock the node&#39;s account to enable it to sign blocks.
 
-Copy the enode address from this node
+Copied the enode address from this node
 
-enode:// 6485277ddb7a7391732fd68a1f02705765e54805a00015d45e69f4c01d037a5f8d1a85d21a2ec9978d7be8133b197601a967b6ec81dbc0a807a8cd326e66ab7e @127.0.0.1:30303
+enode://6485277ddb7a7391732fd68a1f02705765e54805a00015d45e69f4c01d037a5f8d1a85d21a2ec9978d7be8133b197601a967b6ec81dbc0a807a8cd326e66ab7e@127.0.0.1:30303
 
-Use the first node&#39;s enode address as the bootnode for the second node and run on a separate port
+Use the first node&#39;s enode address as the bootnode for the second node and run on a separate port (disabling ipc)
 
 ./geth --allow-insecure-unlock --datadir node2 --unlock &quot;0x34064e5666b1d6f5fd141121738f097d4449434e&quot; --port 30304 --rpc --bootnodes &quot;enode://6485277ddb7a7391732fd68a1f02705765e54805a00015d45e69f4c01d037a5f8d1a85d21a2ec9978d7be8133b197601a967b6ec81dbc0a807a8cd326e66ab7e@127.0.0.1:30303&quot; --ipcdisable
-
-./geth --datadir node2 --unlock &quot;0x34064e5666b1d6f5fd141121738f097d4449434e&quot; --mine --port 30304 --bootnodes enode:// 6485277ddb7a7391732fd68a1f02705765e54805a00015d45e69f4c01d037a5f8d1a85d21a2ec9978d7be8133b197601a967b6ec81dbc0a807a8cd326e66ab7e @127.0.0.1:30303
 
 Using the first node as a bootnode will enable the nodes to communicate with each other, and discover new nodes later.
 
@@ -85,7 +81,7 @@ Your configuration should look like this:
 
 You should now be connected to the local blockchain.
 
-Click on the Keystore file option to access the second node&#39;s wallet and navigate to node2/keystore and select the keystore file, then enter password as the password.
+Click on the Keystore file option to access the first node&#39;s wallet and navigate to node1/keystore and select the keystore file, then enter password as the password.
 
 You should now be able to send a transaction. Fill in the second node&#39;s account and send it one ETH.
 
