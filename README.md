@@ -95,24 +95,24 @@ Once confirmed, you can check the TX Status by clicking the button in the popup,
 
 Screenshot 2021-02-05 (#1) – Creating the 2 nodes and the network:
 
-![custom-nodes](./Screenshots/Screenshot 2021-02-05 (#1).png)
+![Screenshot 2021-02-05 (#1)](https://user-images.githubusercontent.com/70610967/107152992-66d86c80-6928-11eb-95a3-96deaa3fb0c4.PNG)
 
 Screenshot 2021-02-05 (#2) – Create the new network and Genesis block
 
-![new\_network](./Screenshots/Screenshot 2021-02-05 (#2).png)
+![Screenshot 2021-02-05 (#2)](https://user-images.githubusercontent.com/70610967/107153023-9b4c2880-6928-11eb-9a33-c40563a33c82.PNG)
 
 Screenshot 2021-02-05 (#3) – Export the Genesis configurations
 
-![Genisis](./Screenshots/Screenshot 2021-02-05 (#3).png)
+![Screenshot 2021-02-05 (#3)](https://user-images.githubusercontent.com/70610967/107153037-b323ac80-6928-11eb-93c9-59c7e43ac5b7.PNG)
 
 Screenshot 2021-02-05 (#4) – Initializing the 2 nodes
 
-![initializing-nodes](./Screenshots/Screenshot 2021-02-05 (#4).png)
+![Screenshot 2021-02-05 (#4)](https://user-images.githubusercontent.com/70610967/107153060-cc2c5d80-6928-11eb-9eaa-712486e86716.PNG)
 
 Screenshot 2021-02-04 (#4) – Mining:
 
-![mining](./Screenshots/Screenshot 2021-02-04 (#4).png)
+![Screenshot 2021-02-04 (#4)](https://user-images.githubusercontent.com/70610967/107153079-dea69700-6928-11eb-94fe-a6474e6fea83.PNG)
 
 Screenshot 2021-02-05 (#5) – Setting up your custom node
 
-![MyCrypto](./Screenshots/Screenshot 2021-02-05 (#5).png)
+![Screenshot 2021-02-05 (#5)](https://user-images.githubusercontent.com/70610967/107153094-ed8d4980-6928-11eb-8f32-14c088a8e32c.PNG)
