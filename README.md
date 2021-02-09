@@ -75,7 +75,7 @@ Send a test transaction
 
 Open up MyCrypto and select Change network at the bottom left.
 
-Select Add Custom Node and use 127.0.0.1:8545 to connect to the first node, add a name, use chain ID 567 and save.
+Select Add Custom Node and use http://127.0.0.1:8545 to connect to the first node (don't use https://), add a name, use chain ID 567 and save.
 
 Your configuration should look like this:
 
