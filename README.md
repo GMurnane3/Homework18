@@ -26,7 +26,17 @@
 
 **Send a test transaction**
 
-As I was unable to get the 2 nodes mining I was not able to send a test transaction.
+Here I sent 1,000,000 ETH from Node 1 to Node 2:
+
+![Send 1,000,000 ETH from Node 1 to Node 2](https://user-images.githubusercontent.com/70610967/107569551-aa8bda00-6ba5-11eb-803a-5a4fefc95874.PNG)
+
+Here you can see it having been mined:
+
+![Mining Transaction](https://user-images.githubusercontent.com/70610967/107569632-c8593f00-6ba5-11eb-9f88-a844befac242.PNG)
+
+In checking the transaction status, one can see that the transaction was effected, however it would never move from a Pending status to Completed:
+
+![Check Transaction Status](https://user-images.githubusercontent.com/70610967/107569852-022a4580-6ba6-11eb-9f8e-4c6ee099d1bc.PNG)
 
 **Created a repository**
 
@@ -109,6 +119,6 @@ Screenshot 2021-02-04 (#4) – Mining:
 
 ![Screenshot 2021-02-04 (#4)](https://user-images.githubusercontent.com/70610967/107153079-dea69700-6928-11eb-94fe-a6474e6fea83.PNG)
 
-Screenshot 2021-02-05 (#5) – Setting up your custom node
+Screenshot 2021-02-05 (#5) – Setting up your custom node (this configuration did hot work as one needs to use 'http://', not 'https://'
 
 ![Screenshot 2021-02-05 (#5)](https://user-images.githubusercontent.com/70610967/107153094-ed8d4980-6928-11eb-8f32-14c088a8e32c.PNG)
