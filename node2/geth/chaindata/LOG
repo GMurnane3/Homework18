@@ -26,3 +26,45 @@
 08:45:11.875742 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
 08:45:11.879731 db@janitor F·4 G·0
 08:45:11.879731 db@open done T·21.9419ms
+=============== Feb 7, 2021 (MST) ===============
+11:26:58.883665 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:26:58.986364 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:26:58.986364 db@open opening
+11:26:58.986364 journal@recovery F·1
+11:26:58.991351 journal@recovery recovering @6
+11:26:58.999598 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:26:59.117284 db@janitor F·4 G·0
+11:26:59.118281 db@open done T·131.9168ms
+11:27:14.497692 db@close closing
+11:27:14.505710 db@close done T·8.0186ms
+=============== Feb 7, 2021 (MST) ===============
+11:38:22.761919 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:38:22.774890 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:38:22.774890 db@open opening
+11:38:22.774890 journal@recovery F·1
+11:38:22.779879 journal@recovery recovering @8
+11:38:22.785860 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:38:22.910133 db@janitor F·4 G·0
+11:38:22.910133 db@open done T·135.2421ms
+11:38:29.066255 db@close closing
+11:38:29.067267 db@close done T·1.0117ms
+=============== Feb 7, 2021 (MST) ===============
+11:38:48.884592 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:38:48.885560 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:38:48.885560 db@open opening
+11:38:48.885560 journal@recovery F·1
+11:38:48.889550 journal@recovery recovering @10
+11:38:48.896531 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:38:49.011559 db@janitor F·4 G·0
+11:38:49.011559 db@open done T·125.999ms
+11:39:04.283689 db@close closing
+11:39:04.287686 db@close done T·3.9977ms
+=============== Feb 7, 2021 (MST) ===============
+11:39:52.575759 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:39:52.575759 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:39:52.575759 db@open opening
+11:39:52.575759 journal@recovery F·1
+11:39:52.580746 journal@recovery recovering @12
+11:39:52.590720 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+11:39:52.716267 db@janitor F·4 G·0
+11:39:52.716267 db@open done T·140.5081ms
